@@ -1,0 +1,12 @@
+dataset,step,samples,features,note
+GSE72809,1 downloaded,292,47323,all arrays in the series
+GSE72809,2 definite bacterial / viral only,144,47323,excluded 148 control / probable / uncertain arrays
+GSE42026,1 downloaded,92,48803,all arrays in the series
+GSE42026,2 definite bacterial / viral only,59,48803,excluded 33 control / probable / uncertain arrays
+GSE72809,3 probes with no missing values,144,47323,dropped 0 probes with missing values
+GSE42026,3 probes with no missing values,59,48803,dropped 0 probes with missing values
+GSE72809,5 expressed probes,144,25271,value > 5.50 (dataset median) in >= 52 arrays
+GSE72809,6 probes mapped to one gene,144,19701,"illuminaHumanv4.db, unambiguous probes"
+GSE72809,7 one probe per gene,144,13701,highest mean expression probe per gene
+GSE42026,5 discovery probes present on V3 chip,59,12544,12544/13701 representative probes have the same ID on HumanHT-12 V3
+GSE42026,6 genes available for testing,59,12543,same probe sequence as discovery; 1 probes constant at the floor dropped

@@ -1,0 +1,68 @@
+dataset,variable,description,n_unique,example
+GSE72809,title,submitter's sample name,292,Definite Bacterial_01
+GSE72809,geo_accession,"GEO sample ID (GSM), unique per array",292,GSM1872417
+GSE72809,status,public release date,1,Public on Aug 29 2016
+GSE72809,submission_date,date submitted to GEO,2,Sep 08 2015
+GSE72809,last_update_date,date of last GEO update,1,Aug 29 2016
+GSE72809,type,molecule type,1,RNA
+GSE72809,channel_count,number of dye channels,1,1
+GSE72809,source_name_ch1,biological source,6,Whole Blood from patient with Definite Viral infection
+GSE72809,organism_ch1,species,1,Homo sapiens
+GSE72809,category,clinical characteristic,6,Definite Viral
+GSE72809,dataset,clinical characteristic,1,Discovery
+GSE72809,gender,clinical characteristic,2,Male
+GSE72809,tissue,clinical characteristic,2,Whole Blood
+GSE72809,molecule_ch1,extracted molecule,1,total RNA
+GSE72809,extract_protocol_ch1,RNA extraction protocol,1,Standard PAXgene® blood RNA extraction kit protocol (Qiagen).
+GSE72809,label_ch1,label used,1,biotin
+GSE72809,label_protocol_ch1,labelling protocol,1,Standard Illumina TotalPrep RNA Amplification kits (Applied Biosystems
+GSE72809,taxid_ch1,NCBI taxonomy ID,1,9606
+GSE72809,hyb_protocol,hybridisation protocol,1,Standard Illumina hybridisation protocol.
+GSE72809,scan_protocol,scanning protocol,1,Standard Illumina scanning protocol.
+GSE72809,data_processing,how expression values were processed,1,"The data were normalised using RSN, after background subtraction and f"
+GSE72809,data_processing_2,clinical characteristic,2,The software used for data normalization was 'R' Language and Environm
+GSE72809,platform_id,GEO platform (array type),1,GPL10558
+GSE72809,contact_name,submitter,1,"Michael,,Levin"
+GSE72809,contact_email,clinical characteristic,1,"m.levin@imperial.ac.uk, m.kaforou@imperial.ac.uk, v.wright@imperial.ac"
+GSE72809,contact_laboratory,clinical characteristic,1,Sir Alexander Fleming Building
+GSE72809,contact_department,clinical characteristic,1,Paediatrics
+GSE72809,contact_institute,clinical characteristic,1,Imperial College London
+GSE72809,contact_address,clinical characteristic,1,South Kensington Campus
+GSE72809,contact_city,clinical characteristic,1,London
+GSE72809,contact_zip/postal_code,clinical characteristic,1,SW7 2AZ
+GSE72809,contact_country,clinical characteristic,1,United Kingdom
+GSE72809,supplementary_file,raw-data file link,1,NONE
+GSE72809,data_row_count,number of probes reported for the sample,1,47323
+GSE42026,title,submitter's sample name,92,WB-bact-m117
+GSE42026,geo_accession,"GEO sample ID (GSM), unique per array",92,GSM1030788
+GSE42026,status,public release date,1,Public on Sep 05 2013
+GSE42026,submission_date,date submitted to GEO,1,Nov 05 2012
+GSE42026,last_update_date,date of last GEO update,1,Sep 05 2013
+GSE42026,type,molecule type,1,RNA
+GSE42026,channel_count,number of dye channels,1,1
+GSE42026,source_name_ch1,biological source,4,Whole Blood from healthy control
+GSE42026,organism_ch1,species,1,Homo sapiens
+GSE42026,gender,clinical characteristic,2,male
+GSE42026,infecting pathogen,clinical characteristic,4,none
+GSE42026,tissue,clinical characteristic,1,whole blood
+GSE42026,molecule_ch1,extracted molecule,1,total RNA
+GSE42026,extract_protocol_ch1,RNA extraction protocol,1,Standard PAXgene® blood RNA extraction kit protocol (Qiagen).
+GSE42026,label_ch1,label used,1,Biotin
+GSE42026,label_protocol_ch1,labelling protocol,1,Standard Illumina TotalPrep RNA Amplification kits (Applied Biosystems
+GSE42026,taxid_ch1,NCBI taxonomy ID,1,9606
+GSE42026,hyb_protocol,hybridisation protocol,1,Standard Illumina hybridisation protocol.
+GSE42026,scan_protocol,scanning protocol,1,Standard Illumina scanning protocol.
+GSE42026,description,free-text sample description,92,5322084009_I
+GSE42026,data_processing,how expression values were processed,1,"The data were normalised using Genome Studio, with background subtract"
+GSE42026,platform_id,GEO platform (array type),1,GPL6947
+GSE42026,contact_name,submitter,1,"Jethro,A,Herberg"
+GSE42026,contact_email,clinical characteristic,1,jethro.herberg@imperial.ac.uk
+GSE42026,contact_laboratory,clinical characteristic,1,Wright-Fleming Institute
+GSE42026,contact_department,clinical characteristic,1,Section of Paediatrics
+GSE42026,contact_institute,clinical characteristic,1,Imperial College London
+GSE42026,contact_address,clinical characteristic,1,Norfolk Place
+GSE42026,contact_city,clinical characteristic,1,London
+GSE42026,contact_zip/postal_code,clinical characteristic,1,W2 1PG
+GSE42026,contact_country,clinical characteristic,1,United Kingdom
+GSE42026,supplementary_file,raw-data file link,1,NONE
+GSE42026,data_row_count,number of probes reported for the sample,1,48803

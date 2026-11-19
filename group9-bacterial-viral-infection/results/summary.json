@@ -1,0 +1,663 @@
+{
+ "counts": [
+  {
+   "dataset": "GSE72809",
+   "step": "1 downloaded",
+   "samples": 292,
+   "features": 47323,
+   "note": "all arrays in the series"
+  },
+  {
+   "dataset": "GSE72809",
+   "step": "2 definite bacterial / viral only",
+   "samples": 144,
+   "features": 47323,
+   "note": "excluded 148 control / probable / uncertain arrays"
+  },
+  {
+   "dataset": "GSE42026",
+   "step": "1 downloaded",
+   "samples": 92,
+   "features": 48803,
+   "note": "all arrays in the series"
+  },
+  {
+   "dataset": "GSE42026",
+   "step": "2 definite bacterial / viral only",
+   "samples": 59,
+   "features": 48803,
+   "note": "excluded 33 control / probable / uncertain arrays"
+  },
+  {
+   "dataset": "GSE72809",
+   "step": "3 probes with no missing values",
+   "samples": 144,
+   "features": 47323,
+   "note": "dropped 0 probes with missing values"
+  },
+  {
+   "dataset": "GSE42026",
+   "step": "3 probes with no missing values",
+   "samples": 59,
+   "features": 48803,
+   "note": "dropped 0 probes with missing values"
+  },
+  {
+   "dataset": "GSE72809",
+   "step": "5 expressed probes",
+   "samples": 144,
+   "features": 25271,
+   "note": "value > 5.50 (dataset median) in >= 52 arrays"
+  },
+  {
+   "dataset": "GSE72809",
+   "step": "6 probes mapped to one gene",
+   "samples": 144,
+   "features": 19701,
+   "note": "illuminaHumanv4.db, unambiguous probes"
+  },
+  {
+   "dataset": "GSE72809",
+   "step": "7 one probe per gene",
+   "samples": 144,
+   "features": 13701,
+   "note": "highest mean expression probe per gene"
+  },
+  {
+   "dataset": "GSE42026",
+   "step": "5 discovery probes present on V3 chip",
+   "samples": 59,
+   "features": 12544,
+   "note": "12544/13701 representative probes have the same ID on HumanHT-12 V3"
+  },
+  {
+   "dataset": "GSE42026",
+   "step": "6 genes available for testing",
+   "samples": 59,
+   "features": 12543,
+   "note": "same probe sequence as discovery; 1 probes constant at the floor dropped"
+  }
+ ],
+ "n_genes_tested": 13701,
+ "n_de": 5760,
+ "n_de_bact": 2506,
+ "n_de_viral": 3254,
+ "n_strong": 210,
+ "n_strong_bact": 101,
+ "n_strong_viral": 109,
+ "top_bact": [
+  "RFLNB",
+  "S100P",
+  "TDRD9",
+  "SLC25A40",
+  "SGSH",
+  "ANO10",
+  "OPLAH",
+  "SLC26A11",
+  "PECR",
+  "RAB2A"
+ ],
+ "top_viral": [
+  "IFI44L",
+  "IFI27",
+  "EPSTI1",
+  "IFIT1",
+  "IFI44",
+  "RSAD2",
+  "OAS2",
+  "LY6E",
+  "XAF1",
+  "IFI6"
+ ],
+ "replication_same_direction": 0.817861121425919,
+ "replication_same_dir_p05": 0.3039361307092462,
+ "replication_strong": "140/205",
+ "fc_correlation_de": 0.7487934456880362,
+ "n_shared_genes": 12543,
+ "cv_mean": {
+  "Majority baseline": {
+   "balanced_accuracy": 0.5,
+   "sensitivity_bacterial": 0.0,
+   "specificity_viral": 1.0,
+   "auroc": 0.5
+  },
+  "Logistic regression": {
+   "balanced_accuracy": 0.8537,
+   "sensitivity_bacterial": 0.8091,
+   "specificity_viral": 0.8982,
+   "auroc": 0.9431
+  },
+  "Random forest": {
+   "balanced_accuracy": 0.8799,
+   "sensitivity_bacterial": 0.8394,
+   "specificity_viral": 0.9205,
+   "auroc": 0.941
+  },
+  "Herberg 2-gene score": {
+   "balanced_accuracy": 0.8921,
+   "sensitivity_bacterial": 0.9042,
+   "specificity_viral": 0.8799,
+   "auroc": 0.9633
+  }
+ },
+ "cv_sd": {
+  "Majority baseline": {
+   "balanced_accuracy": 0.0,
+   "sensitivity_bacterial": 0.0,
+   "specificity_viral": 0.0,
+   "auroc": 0.0
+  },
+  "Logistic regression": {
+   "balanced_accuracy": 0.064,
+   "sensitivity_bacterial": 0.1287,
+   "specificity_viral": 0.0903,
+   "auroc": 0.0427
+  },
+  "Random forest": {
+   "balanced_accuracy": 0.0543,
+   "sensitivity_bacterial": 0.1339,
+   "specificity_viral": 0.0791,
+   "auroc": 0.0583
+  },
+  "Herberg 2-gene score": {
+   "balanced_accuracy": 0.0462,
+   "sensitivity_bacterial": 0.095,
+   "specificity_viral": 0.0966,
+   "auroc": 0.0306
+  }
+ },
+ "external": {
+  "Majority baseline": {
+   "balanced_accuracy": 0.5,
+   "sensitivity_bacterial": 0.0,
+   "specificity_viral": 1.0,
+   "auroc": 0.5,
+   "TP": 0,
+   "FN": 18,
+   "FP": 0,
+   "TN": 41,
+   "auroc_95CI": "0.50\u20130.50",
+   "balanced_accuracy_95CI": "0.50\u20130.50"
+  },
+  "Logistic regression": {
+   "balanced_accuracy": 0.8191056910569106,
+   "sensitivity_bacterial": 0.8333333333333334,
+   "specificity_viral": 0.8048780487804879,
+   "auroc": 0.9010840108401084,
+   "TP": 15,
+   "FN": 3,
+   "FP": 8,
+   "TN": 33,
+   "auroc_95CI": "0.81\u20130.97",
+   "balanced_accuracy_95CI": "0.70\u20130.92"
+  },
+  "Random forest": {
+   "balanced_accuracy": 0.7791327913279134,
+   "sensitivity_bacterial": 0.7777777777777778,
+   "specificity_viral": 0.7804878048780488,
+   "auroc": 0.9078590785907859,
+   "TP": 14,
+   "FN": 4,
+   "FP": 9,
+   "TN": 32,
+   "auroc_95CI": "0.82\u20130.97",
+   "balanced_accuracy_95CI": "0.66\u20130.89"
+  },
+  "Herberg 2-gene score": {
+   "balanced_accuracy": 0.7981029810298103,
+   "sensitivity_bacterial": 0.8888888888888888,
+   "specificity_viral": 0.7073170731707317,
+   "auroc": 0.8699186991869918,
+   "TP": 16,
+   "FN": 2,
+   "FP": 12,
+   "TN": 29,
+   "auroc_95CI": "0.77\u20130.95",
+   "balanced_accuracy_95CI": "0.69\u20130.89"
+  }
+ },
+ "sensitivity": [
+  {
+   "model": "Logistic regression",
+   "harmonisation": "none (raw log2)",
+   "balanced_accuracy": 0.6822493224932249,
+   "sensitivity_bacterial": 0.3888888888888889,
+   "specificity_viral": 0.975609756097561,
+   "auroc": 0.8726287262872628,
+   "TP": 7,
+   "FN": 11,
+   "FP": 1,
+   "TN": 40
+  },
+  {
+   "model": "Logistic regression",
+   "harmonisation": "within-dataset z-score",
+   "balanced_accuracy": 0.8191056910569106,
+   "sensitivity_bacterial": 0.8333333333333334,
+   "specificity_viral": 0.8048780487804879,
+   "auroc": 0.9010840108401084,
+   "TP": 15,
+   "FN": 3,
+   "FP": 8,
+   "TN": 33
+  },
+  {
+   "model": "Random forest",
+   "harmonisation": "none (raw log2)",
+   "balanced_accuracy": 0.8279132791327913,
+   "sensitivity_bacterial": 0.7777777777777778,
+   "specificity_viral": 0.8780487804878049,
+   "auroc": 0.934959349593496,
+   "TP": 14,
+   "FN": 4,
+   "FP": 5,
+   "TN": 36
+  },
+  {
+   "model": "Random forest",
+   "harmonisation": "within-dataset z-score",
+   "balanced_accuracy": 0.7791327913279134,
+   "sensitivity_bacterial": 0.7777777777777778,
+   "specificity_viral": 0.7804878048780488,
+   "auroc": 0.9078590785907859,
+   "TP": 14,
+   "FN": 4,
+   "FP": 9,
+   "TN": 32
+  },
+  {
+   "model": "Logistic regression",
+   "harmonisation": "z-score, 5 QC-flagged test arrays removed",
+   "balanced_accuracy": 0.7974358974358975,
+   "sensitivity_bacterial": 0.8,
+   "specificity_viral": 0.7948717948717948,
+   "auroc": 0.8923076923076924,
+   "TP": 12,
+   "FN": 3,
+   "FP": 8,
+   "TN": 31
+  },
+  {
+   "model": "Random forest",
+   "harmonisation": "z-score, 5 QC-flagged test arrays removed",
+   "balanced_accuracy": 0.7846153846153847,
+   "sensitivity_bacterial": 0.8,
+   "specificity_viral": 0.7692307692307693,
+   "auroc": 0.9059829059829061,
+   "TP": 12,
+   "FN": 3,
+   "FP": 9,
+   "TN": 30
+  }
+ ],
+ "modules": [
+  {
+   "module": 1,
+   "n_genes": 44,
+   "composition": "37 bacterial, 7 viral",
+   "hub_genes": "SLC25A40, OPLAH, TDRD9, RFLNB, ANO10, TMCO3"
+  },
+  {
+   "module": 2,
+   "n_genes": 33,
+   "composition": "33 viral",
+   "hub_genes": "OAS2, IFI44L, LY6E, EPSTI1, PARP12, XAF1"
+  }
+ ],
+ "hallmark_bact": [
+  {
+   "term": "HALLMARK_XENOBIOTIC_METABOLISM",
+   "FDR": 0.10255935702945043,
+   "overlap": 5
+  },
+  {
+   "term": "HALLMARK_KRAS_SIGNALING_UP",
+   "FDR": 0.21342206822089593,
+   "overlap": 4
+  },
+  {
+   "term": "HALLMARK_COAGULATION",
+   "FDR": 0.21342206822089593,
+   "overlap": 3
+  },
+  {
+   "term": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+   "FDR": 0.32625183077262987,
+   "overlap": 3
+  },
+  {
+   "term": "HALLMARK_APICAL_JUNCTION",
+   "FDR": 0.32625183077262987,
+   "overlap": 3
+  }
+ ],
+ "hallmark_viral": [
+  {
+   "term": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+   "FDR": 2.13044544609432e-53,
+   "overlap": 44
+  },
+  {
+   "term": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+   "FDR": 1.214214670688538e-52,
+   "overlap": 36
+  },
+  {
+   "term": "HALLMARK_ALLOGRAFT_REJECTION",
+   "FDR": 7.047926806105114e-05,
+   "overlap": 9
+  },
+  {
+   "term": "HALLMARK_INFLAMMATORY_RESPONSE",
+   "FDR": 0.00033901269389552424,
+   "overlap": 8
+  },
+  {
+   "term": "HALLMARK_KRAS_SIGNALING_DN",
+   "FDR": 0.006431666824533042,
+   "overlap": 5
+  }
+ ],
+ "go_bact": [
+  {
+   "term": "neutrophil degranulation (GO:0043312)",
+   "FDR": 5.6925809545017874e-27,
+   "overlap": 37
+  },
+  {
+   "term": "neutrophil activation involved in immune response (GO:0002283)",
+   "FDR": 5.6925809545017874e-27,
+   "overlap": 37
+  },
+  {
+   "term": "neutrophil mediated immunity (GO:0002446)",
+   "FDR": 5.6925809545017874e-27,
+   "overlap": 37
+  },
+  {
+   "term": "defense response to bacterium (GO:0042742)",
+   "FDR": 1.0625499655579043e-10,
+   "overlap": 13
+  },
+  {
+   "term": "antibacterial humoral response (GO:0019731)",
+   "FDR": 0.00011546204981377084,
+   "overlap": 5
+  },
+  {
+   "term": "extracellular matrix disassembly (GO:0022617)",
+   "FDR": 0.0002971061764446499,
+   "overlap": 5
+  },
+  {
+   "term": "cellular component disassembly (GO:0022411)",
+   "FDR": 0.00030006413835643195,
+   "overlap": 5
+  },
+  {
+   "term": "defense response to Gram-negative bacterium (GO:0050829)",
+   "FDR": 0.0009270577549978447,
+   "overlap": 5
+  }
+ ],
+ "go_viral": [
+  {
+   "term": "defense response to virus (GO:0051607)",
+   "FDR": 3.2605666455717875e-30,
+   "overlap": 27
+  },
+  {
+   "term": "defense response to symbiont (GO:0140546)",
+   "FDR": 1.3101271173096312e-29,
+   "overlap": 26
+  },
+  {
+   "term": "type I interferon signaling pathway (GO:0060337)",
+   "FDR": 4.59972998951486e-25,
+   "overlap": 19
+  },
+  {
+   "term": "cellular response to type I interferon (GO:0071357)",
+   "FDR": 4.59972998951486e-25,
+   "overlap": 19
+  },
+  {
+   "term": "negative regulation of viral process (GO:0048525)",
+   "FDR": 3.397091164945545e-15,
+   "overlap": 14
+  },
+  {
+   "term": "negative regulation of viral genome replication (GO:0045071)",
+   "FDR": 6.513676143878915e-15,
+   "overlap": 13
+  },
+  {
+   "term": "cellular response to interferon-gamma (GO:0071346)",
+   "FDR": 5.213440036819986e-14,
+   "overlap": 15
+  },
+  {
+   "term": "cytokine-mediated signaling pathway (GO:0019221)",
+   "FDR": 7.950884868400853e-14,
+   "overlap": 27
+  }
+ ],
+ "final_params": {
+  "Logistic regression": "{'clf__C': 0.1, 'select__k': 200}",
+  "Random forest": "{'clf__max_features': 0.3, 'select__k': 200}"
+ },
+ "lr_genes": [
+  "ACAA1",
+  "ACP3",
+  "ADGRE1",
+  "AGTPBP1",
+  "ALCAM",
+  "ANAPC15",
+  "ANO10",
+  "ARG1",
+  "ATP9A",
+  "BRD7",
+  "BST2",
+  "BTN3A1",
+  "BTN3A2",
+  "BTN3A3",
+  "C7orf50",
+  "CA4",
+  "CAPZB",
+  "CD63",
+  "CD86",
+  "CDC123",
+  "CEMIP2",
+  "CERT1",
+  "CMPK2",
+  "CMTM4",
+  "COL17A1",
+  "COLGALT1",
+  "CTSK",
+  "CUL1",
+  "CXCR2P1",
+  "CYB5D2",
+  "CYB5R1",
+  "DACH1",
+  "DCTN2",
+  "DDX60",
+  "DGLUCY",
+  "DHX58",
+  "DICER1-AS1",
+  "DLL1",
+  "DNAJC3",
+  "EBI3",
+  "EIF2AK2",
+  "EPSTI1",
+  "ERP27",
+  "EXOSC4",
+  "F12",
+  "F5",
+  "FAM89A",
+  "FBXW2",
+  "FHOD1",
+  "FKBP9P1",
+  "GAPDH",
+  "GBE1",
+  "GBP1",
+  "GIMAP4",
+  "GMFG",
+  "GPBAR1",
+  "GPR63",
+  "GRB10",
+  "GSN",
+  "H6PD",
+  "HCP5",
+  "HERC5",
+  "HERC6",
+  "HES4",
+  "HLA-DMB",
+  "HLA-DPA1",
+  "HLA-DRB6",
+  "HP",
+  "HSD3B7",
+  "HSH2D",
+  "HYAL2",
+  "IER3",
+  "IFI27",
+  "IFI44",
+  "IFI44L",
+  "IFI6",
+  "IFIH1",
+  "IFIT1",
+  "IFIT2",
+  "IFIT3",
+  "IFIT5",
+  "IL1R2",
+  "IL22RA1",
+  "IMPA2",
+  "IRF7",
+  "ISG15",
+  "ISG20",
+  "LAMP3",
+  "LAP3",
+  "LNPK",
+  "LRPAP1",
+  "LTA4H",
+  "LY6E",
+  "LYSMD2",
+  "MAP3K7CL",
+  "MAT2B",
+  "MCU",
+  "MMP8",
+  "MOV10",
+  "MSRA",
+  "MT1A",
+  "MT2A",
+  "MX1",
+  "NARF",
+  "NASP",
+  "NLRC4",
+  "NOD1",
+  "OAS1",
+  "OAS2",
+  "OAS3",
+  "ODC1",
+  "OLAH",
+  "OPLAH",
+  "ORM2",
+  "OTOF",
+  "P2RX1",
+  "PARP11",
+  "PARP12",
+  "PARP14",
+  "PCOLCE2",
+  "PDGFC",
+  "PECR",
+  "PGD",
+  "PGM1",
+  "PIK3CB",
+  "PKM",
+  "PLEKHO1",
+  "PLP2",
+  "PNPO",
+  "PROK1",
+  "PSMB9",
+  "PSME1",
+  "PSME2",
+  "QDPR",
+  "QSOX1",
+  "RAB2A",
+  "RABAC1",
+  "RABGEF1",
+  "RAE1",
+  "RBM43",
+  "RETN",
+  "RFLNB",
+  "RFX5",
+  "RMDN3",
+  "RNF114",
+  "ROGDI",
+  "RSAD2",
+  "RTN2",
+  "RTP4",
+  "S100A12",
+  "S100A4",
+  "S100P",
+  "SAMD9L",
+  "SCPEP1",
+  "SDHC",
+  "SERPINB8",
+  "SERPING1",
+  "SFXN5",
+  "SGSH",
+  "SHFL",
+  "SIGLEC1",
+  "SIGLEC10",
+  "SIRPD",
+  "SLC25A40",
+  "SLC26A11",
+  "SLC26A6",
+  "SLC49A4",
+  "SLC51A",
+  "SLCO4C1",
+  "SLPI",
+  "SMPDL3A",
+  "SNORD16",
+  "SNORD35B",
+  "SPATS2L",
+  "ST3GAL5",
+  "ST6GALNAC3",
+  "STAT1",
+  "STAT2",
+  "STXBP5",
+  "SUMF1",
+  "TAFAZZIN",
+  "TAP2",
+  "TDRD9",
+  "TLR7",
+  "TMCO3",
+  "TMEM169",
+  "TMEM268",
+  "TP53I3",
+  "TRIM22",
+  "TSPO",
+  "TXNRD1",
+  "UBE2L6",
+  "ULK1",
+  "UPB1",
+  "VAT1",
+  "XAF1",
+  "XRN2",
+  "ZBP1",
+  "ZBTB47",
+  "ZDHHC3"
+ ],
+ "errors": {
+  "wrong_LR": {
+   "Gram-positive bacterial": 3,
+   "H1N1/09 influenza": 3,
+   "RSV": 5
+  },
+  "wrong_RF": {
+   "Gram-positive bacterial": 4,
+   "H1N1/09 influenza": 3,
+   "RSV": 6
+  }
+ }
+}
